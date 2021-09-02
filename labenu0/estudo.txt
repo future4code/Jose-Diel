@@ -1,0 +1,4 @@
+terminal
+git
+JS 
+Logica e Algoritimos
