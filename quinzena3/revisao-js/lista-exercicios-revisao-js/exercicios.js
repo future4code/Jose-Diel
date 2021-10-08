@@ -59,39 +59,95 @@ function retornaQuantidadeElementos(array) {
 
 // EXERCÍCIO 06
 function retornaExpressoesBooleanas() {
+  const booleano1 = true
+  const booleano2 = false
+  const booleano3 = !booleano2 
+  const booleano4 = !booleano3
+
+
+  let array = [
+    (booleano1 && booleano2 && !booleano4),
+    (booleano1 && booleano2 || !booleano3),
+    (booleano2 || booleano3 && booleano4 || booleano1),
+    !(booleano2 && booleano3) || !(booleano1 && booleano3),
+    !(booleano1) && !(booleano3) || (!booleano4 && booleano3 && booleano3)
+  ]
+  return array
+}
   
-}
 
-/*// EXERCÍCIO 07
+// EXERCÍCIO 07
 function retornaNNumerosPares(n) {
-
+  const numerosPares = []
+  let par = 0
+  let i = 0
+  while(i < n){
+     i++
+     numerosPares.push(par)
+     par = par + 2
+  }
+  return numerosPares
 }
-
 // EXERCÍCIO 08
 function checaTriangulo(a, b, c) {
-  // return 'Escaleno'
-  // return 'Equilátero'
-  // return 'Isósceles'
+  if(a === b && a === c ){
+    return "Equilátero"
+ }else if((a === b && b !== c) || (a !== b && b === c) ){
+    return "Isósceles"
+ }else if(a !== b && a !== c && b !== c){
+    return "Escaleno"
+ }
 }
 
 // EXERCÍCIO 09
-function comparaDoisNumeros(num1, num2) {
-  // Formato do objeto a ser retornado:
-  // {
-  //   maiorNumero: X,
-  //   maiorDivisivelPorMenor: Y,
-  //   diferenca: Z
-  // }
+function comparaDoisNumeros(num1, num2) { 
+  let maior
+  let menor
+
+  let divisivel1 = {maiorNumero: 0, maiorDivisivelPorMenor: false, diferenca: 0}
+
+  if(num1 > num2){
+    maior = num1
+    menor = num2
+  }else{
+    maior = num2
+    menor = num1
+  }
+    divisivel1.maiorNumero = maior;
+    divisivel1.maiorDivisivelPorMenor = maior % menor === 0;
+    divisivel1.diferenca = maior - menor;
+    
+  return divisivel1
 }
 
 // EXERCÍCIO 10
 function segundoMaiorEMenor(array) {
-
+  let numero = array.length;
+  for (let maior = 0; maior < numero; maior++){;
+    for (let menor = 0; menor < numero; menor++){;
+      if(array[menor] > array[menor + 1]){
+        let conta = array[menor];
+        array[menor] = array[menor + 1];
+        array[menor + 1] = conta;
+      }
+   }
+  }  
+      return[array[array.length - 2], array[1]];
 }
-
 // EXERCÍCIO 11
-function ordenaArray(array) {
 
+function ordenaArray(array) {
+  let tamanho = array.length;
+  for (let i = 0; i < tamanho; i++) {
+      for (let compara = 0; compara < tamanho; compara++) {
+          if (array[compara] > array[compara + 1]) {
+              let novoCompara = array[compara];
+              array[compara] = array[compara + 1];
+              array[compara + 1] = novoCompara;
+          }
+      }
+  }
+  return array
 }
 
 // EXERCÍCIO 12
@@ -111,8 +167,10 @@ function criaRetangulo(lado1, lado2) {
 
 // EXERCÍCIO 15
 function anonimizaPessoa(pessoa) {
-
+  return {...pessoa, nome: "ANÔNIMO"}
 }
+
+
 
 // EXERCÍCIO 16A
 function maioresDe18(arrayDePessoas) {
@@ -163,4 +221,3 @@ function ordenaPorData(consultasData) {
 function calculaSaldo(contas) {
 
 }
-*/
