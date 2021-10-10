@@ -152,17 +152,31 @@ function ordenaArray(array) {
 
 // EXERCÍCIO 12
 function filmeFavorito() {
-
+    const filme = {
+      nome: 'O Diabo Veste Prada',
+      ano: 2006, 
+      diretor: 'David Frankel',
+      atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+    }
+    return filme
 }
 
 // EXERCÍCIO 13
 function imprimeChamada() {
-  // "Venha assistir ao filme NOME_DO_FILME, de ANO, dirigido por DIRECAO e estrelado por ELENCO."
+  const filme = {
+    nome: 'O Diabo Veste Prada',
+    ano: 2006, 
+    diretor: 'David Frankel',
+    atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+  }
+  return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores[0]}, ${filme.atores[1]}, ${filme.atores[2]}, ${filme.atores[3]}.`
 }
 
 // EXERCÍCIO 14
 function criaRetangulo(lado1, lado2) {
-
+  const area = lado1 * lado2
+  const perimetro = lado1*2 + lado2*2
+  return { largura: lado1, altura: lado2, perimetro: perimetro, area: area}
 }
 
 // EXERCÍCIO 15
@@ -173,14 +187,25 @@ function anonimizaPessoa(pessoa) {
 
 
 // EXERCÍCIO 16A
-function maioresDe18(arrayDePessoas) {
-
+function maioresDeIdade(arrayDePessoas) {
+  const selecionarMaiores = (item) => {
+  return item.idade >= 18
+}
+const maioresDeIdadeImprimir = arrayDePessoas.filter(selecionarMaiores)
+console.log (maioresDeIdadeImprimir)
+return maioresDeIdadeImprimir
 }
 
 // EXERCÍCIO 16B
 function menoresDe18(arrayDePessoas) {
+  const selecionarMenores = (item) => {
+    return item.idade < 18
+  }
+  const menoresDeIdadeImprimi = arrayDePessoas.filter(selecionarMenores)
+  console.log (menoresDeIdadeImprimi)
+  return menoresDeIdadeImprimi
+  }
 
-}
 
 // EXERCÍCIO 17A
 function multiplicaArrayPor2(array) {
@@ -199,8 +224,17 @@ function verificaParidade(array) {
 
 // EXERCÍCIO 18A
 function retornaPessoasAutorizadas(pessoas) {
-
+const pessoas = [
+	{ nome: "Paula", idade: 12, altura: 1.8},
+	{ nome: "João", idade: 20, altura: 1.3},
+	{ nome: "Pedro", idade: 15, altura: 1.9},
+	{ nome: "Luciano", idade: 22, altura: 1.8},
+	{ nome: "Artur", idade: 10, altura: 1.2},
+	{ nome: "Soter", idade: 70, altura: 1.9}]
 }
+  return pessoasLista.filter(idade >= 14, idade <= 60, altura >= 1.5)
+    //return pessoas
+ 
 
 // EXERCÍCIO 18B
 function retornaPessoasNaoAutorizadas(pessoas) {
