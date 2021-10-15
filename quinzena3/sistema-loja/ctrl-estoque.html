@@ -4,64 +4,80 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
     <title>Controle de Estoque</title>
 </head>
-<body>
-    <div>
-        <img src="img\logo1.png" style="max-width: 10em;">
-        <!-- <p>JD Informática</p> -->
-    </div>
-    
-    <div>
-        <a href="index.html" target="blank"> Página Inicial</a>
-        <a href="ctrl-estoque.html"target="blank"> Controle de Estoque</a>
-        <a href="add-produto.html"target="blank">  Adicionar Produto</a>
-        <a href="funcionarios.html"target="blank"> Funcionários</a>
-    </div>
-
+<body id="body">
+    <header id="header">
+             
+        <div class="menu">
+            <a class="letras" href="index.html"> Página Inicial</a>
+            <a class="letras" href="ctrl-estoque.html"> Controle de Estoque</a>
+            <a class="letras" href="add-produto.html">  Adicionar Produto</a>
+            <a class="letras" href="funcionarios.html"> Funcionários</a>
+        </div>
+        </header>
+        <main>
     <h2>Controle de Estoque</h2>
 
-    <table>
+    <table id="estoque">
         <tr>
             <th> Foto</th>
             <th> Descrição</th>
             <th> Preço (R$)</th>
             <th> Quantidade disponível</th>
         </tr>
-
-        <tr>
+<br><br><br><br>
+        <tr class="acer">
             <td><video src="img/acer.mp4"controls loop autoplay alt="acer" style="max-width: 10em;"></td>
+                
             <td><b> Notebook Acer E1, core i5</b> </td>
             <td><b> 1499,00 </b></td>
             <td><b> 1 </b></td>
+            <td><button  type="submit" data-app="product.buy-button" data-product ="{{ product.acer }}" >
+                Comprar
+             </button></td>
         </tr>
 
-        <tr>
+        <tr class="asus">
             <td><video src="img/asus.mp4"controls loop autoplay alt="asus" style="max-width: 10em;"></td>
                 <td><b> Notebook Asus, core i7</b> </td>
                 <td><b> 1999,00 </b></td>
                 <td><b> 1 </b></td>
+                <td><button type="submit" data-app="product.buy-button" data-product ="{{ product.asus }}" >
+                    Comprar
+                 </button></td>
         </tr>
 
-        <tr>
+        <tr class="samsung">
             <td><video src="img/samsung.mp4"controls loop autoplay alt="samsung" style="max-width: 10em;"></td>
                 <td><b> Notebook Samsung, core i7</b> </td>
                 <td><b> 1999,00 </b></td>
                 <td><b> 1 </b></td>
+                <td><button type="submit" data-app="product.buy-button" data-product ="{{ product.samsung }}" >
+                    Comprar
+                 </button></td>
         </tr>
 
-        <tr>
+        <tr class="dell">
             <td><video src="img/dell.mp4" controls loop autoplay alt="dell" style="max-width: 10em;"></td>
                 <td><b> Notebook Dell, core i5</b> </td>
                 <td><b> 1650,00 </b></td>
                 <td><b> 1 </b></td>
+                <td><button type="submit" data-app="product.buy-button" data-product ="{{ product.dell }}" >
+                    Comprar
+                 </button></td>
         </tr>
         
-        <tr>
+        <tr class="asus2">
             <td><video src="img/asus2.mp4"controls loop autoplay alt="asus" style="max-width: 10em;"></td>
                 <td><b> Notebook Asus, core i3</b> </td>
                 <td><b> 1199,00 </b></td>
                 <td><b> 1 </b></td>
+                <td><button type="submit" data-app="product.buy-button" data-product ="{{ product.asus }}" >
+                    Comprar
+                 </button></td>
         </tr>
 
     </table>
@@ -69,10 +85,14 @@
     <br><br><br>
     
     <hr size="1">
-    <div>
-        <p>Siga-nos nas redes sociais! </p>
-        
+    </main>
+
+    <footer id="footer">
+    
         <div>
+            <p>Siga-nos nas redes sociais! </p>
+        </div>
+            <div>
             <a href="https://www.facebook.com/SD.infosss/" target="blank" alt="facebook"> 
                 <img src="https://image.flaticon.com/icons/png/512/25/25305.png" style="max-width: 2em;" /></a>
             <a href="https://www.instagram.com/_jdinf/"target="blank"alt="instagram">
@@ -80,5 +100,6 @@
             <a href="https://twitter.com/"target="blank"alt="twitter">
                 <img src="https://image.flaticon.com/icons/png/512/8/8800.png"style="max-width: 2em;"/></a>
         </div>
+    </footer>
 </body>
 </html>

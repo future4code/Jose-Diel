@@ -1,0 +1,54 @@
+#body{
+    background: linear-gradient(to right, rgb(182, 180, 180), rgb(115, 197, 245));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header{
+    background-color: rgb(17, 17, 16);
+    text-align: center;
+}
+.menu{
+    color: rgb(255, 255, 255);
+}
+.boas-vindas{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.letras{
+    color: white;
+    font-size:1.3em;
+    padding:1.2em;    
+}
+#estoque{
+    margin: 0;
+    background: rgb(187, 187, 185);
+    padding: 3% 4% 2% 1%;
+    text-align: justify;
+    border: solid;
+    
+}
+.maps{
+    display: inline;
+    text-align: center;
+
+}
+.mapa{
+    display: inline-flex;
+    
+}
+.sigaRede{
+    
+}
+.func{
+    border: solid;
+    border-radius: 0.5em;
+    margin: 0;
+    font-size: 2em;
+}
+#funcionario{
+    text-align: justify;
+    text-decoration: ;
+}
+.acer{
+    
+}
