@@ -35,3 +35,11 @@ Esse repositório vai acompanhar vocês até o final do curso, para mantermos a 
 ```
 
 Uma pasta para cada semana, dentro delas uma pasta para cada dia de aula e por fim uma pasta para o projeto da semana.
+![image](https://user-images.githubusercontent.com/52138612/137554456-15158709-5a21-4568-be05-643d9779a97a.png)
+![image](https://user-images.githubusercontent.com/52138612/137554585-551c8ea5-b0c6-410f-83c7-ac85375fe215.png)
+![image](https://user-images.githubusercontent.com/52138612/137554625-5b27e963-ed3e-4bea-a39b-65e11693e4d5.png)
+![image](https://user-images.githubusercontent.com/52138612/137554652-6c5d7c22-d520-47f5-a751-716db4d499b9.png)
+
+
+
+
