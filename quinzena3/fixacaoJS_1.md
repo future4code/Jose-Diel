@@ -1,11 +1,14 @@
-``` 
 
-function calculaSalario(qtdeCarrosVendidos, valorTotalVendas) {
-    const salarioFixo = 2000
+function calculaPrecoTotal(quantidade) {
+   
+    if (quantidade < 12){
+    maca = 1.30
+    return quantidade * maca
     
-     calcularSalario = (qtdeCarrosVendidos * 100) + (valorTotalVendas * 0.05) + salarioFixo
-   
-  return calcularSalario
-   }     
-   
+    }else{
+    maca = 1.00
+    return quantidade * maca
+    
+    }
+}    
 ```
