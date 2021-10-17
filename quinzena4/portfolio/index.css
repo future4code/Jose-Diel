@@ -1,0 +1,268 @@
+#body{
+    position: block;
+    margin: 0;
+    background-image: url(https://cdn.wallpapersafari.com/9/37/EtRIFx.jpg);
+    background-size: cover;
+       
+ } 
+ *{
+  margin: 0;
+  padding: 0;
+}
+.menu{
+  width: 100%;
+  height: 50px;
+  background-color: #222;
+  font-family: Arial;
+}
+.menu ul{
+  list-style: none;
+  position: relative;
+}
+.menu ul li{
+  width: 150px;
+  float: left;
+}
+.menu a{
+  padding: 15px;
+  display: block;
+  text-decoration:none;
+  text-align: center;
+  background-color: #222;
+  color: #ffff;
+}
+.menu ul ul{
+  position: absolute;
+  visibility: hidden;
+}
+
+.menu ul li:hover ul{
+  visibility: visible;
+}
+.menu a:hover{
+  background-color: #f4f4f4;
+  color: #555;
+}
+.menu ul ul li{
+  float: none;
+  border-bottom: solid 1px #ccc;
+}
+.menu ul ul li a{
+  background-color: #069;
+}
+label[for="bt_menu"]{
+  padding: 5px;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+#bt_menu{
+  display: none;
+}
+label[for="bt_menu"]{
+  display: none;
+}
+@media(max-width: 800px){
+  label[for="bt_menu"]{
+      display: block;
+  }
+
+  #bt_menu:checked ~ .menu{
+      margin-left: 0;
+  }
+  .menu{
+      margin-top: 5px;
+      margin-left: -100%;
+      transition: all .4s;
+  }
+  .menu ul li{
+      width: 100%;
+      float: none;
+  }
+  .menu ul ul{
+      position: static;
+      overflow: hidden;
+      max-height: 0;
+      transition: all .4s;
+  }
+  .menu ul li:hover ul{
+      height: auto;
+      max-height: 200px;
+
+  }
+}
+
+#site{
+  display: block;
+  color:rgb(245, 245, 245);
+  list-style-type: none;
+  color: white;
+  text-shadow:0px 0px 5px #fff;
+  font-weight:bold;
+  font-size:1.5em;
+  margin: 5.5em 0 2em 0.81em;
+  text-align: center;
+}
+.img{
+    display: inline-block;
+    transition: all 0.5s;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(250, 249, 249, 0.5));
+    filter: drop-shadow(.6px .6px 10px rgba(255, 255, 255, 0.5)); 
+   
+}
+/* .tituH1{
+    display:block ;
+    color:rgb(245, 245, 245);
+    list-style-type: none;
+    color: white;
+    text-shadow:0px 0px 5px #fff;
+    font-weight:bold;
+	  font-size:1.2em;
+    margin: 3.5em 0 2em 0.81em;
+    text-align: center; */
+/* } */
+ .nav-list{
+     display:block;
+    list-style-type: none;
+    color: white;
+    position: relative;
+    text-shadow:0px 0px 5px rgb(5, 5, 5);
+    font-weight:bold;
+	font-size:1.2em;
+    font-style: normal;
+    margin: 2em 0 2em 0.81em;
+    padding: .4em;
+    margin: 0;
+    text-align: center;
+    width: 100%; 
+    
+
+}
+ .nav-list:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    color: rgb(32, 198, 248);
+   
+}
+ 
+.elementos{
+   text-align: center;
+   
+        
+} 
+footer{
+  padding: 24px;
+  display: block;
+  text-decoration:none;
+  text-align: center;
+  background-color: #222;
+  color: #ffff;
+}
+ footer #sigaRede{
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    
+}
+footer div div ul li{
+  display:inline-table;
+  margin: 0;
+  padding: 0;
+  width: 190px;
+  /* float: center; */
+  text-align: center;
+} 
+
+.formulario{
+    color: white;
+}
+form {
+    /*Centralizar o formulário na pagina */
+    margin: 0 auto;
+    width: 4000px;
+    /*Ver o esboço do formulário */
+    padding: 1em;
+    border: .5px solid rgb(184, 184, 184);
+    border-radius: .5em;
+  } 
+  
+  form {
+    /* Centralizar o formulário na pagina */
+    margin: 0 auto;
+    width: 400px;
+    /* Ver o esboço do formulário */
+    padding: 6.5em;
+    border: 1px solid #CCC;
+    border-radius: 2em;
+    background: linear-gradient(to right, rgb(50, 58, 66), rgb(9, 54, 80));
+  }
+  
+    form div + div {
+    margin-top: 2em;
+  } 
+  
+   label { 
+    /* Para garantir que todos os rótulos tenham o mesmo tamanho e estejam devidamente alinhados*/
+    display: inline-block;
+    width: 95px;
+    text-align: right;
+    
+  } 
+  
+  
+   input, textarea { 
+    /* 
+  Para garantir que todos os campos de texto tenham as mesmas configurações de fonte
+       Por padrão, as áreas de texto possuem a mesma fonte */
+    font: 1em sans-serif;
+  
+    /* Para dar o mesmo tamanho a todos os campos de texto*/
+     width: 400px;
+    box-sizing: border-box;
+   
+    /* Para harmonizar o aspecto e a sensação da borda do campo de texto */
+    border: 1px solid rgb(5, 5, 5);
+  } 
+  
+    input:focus, textarea:focus { 
+    /* Para dar um pouco de destaque aos elementos ativos*/
+     border-color: #000;
+  } 
+  
+   textarea { 
+    /* Para alinhar corretamente campos de texto multilinha com seus rótulos */
+     vertical-align: top;
+      
+  
+    /* Para dar espaço suficiente para digitar algum texto */
+     height: 5em;
+   }
+  .botao { 
+    /* Esta margem extra representa aproximadamente o mesmo espaço que o espaço
+       entre os rótulos e seus campos de texto*/
+       display: inline-block;
+       width: 90px;
+       text-align: right;
+    
+  } 
+   .for-parag{
+      color: white;
+      
+  } 
+  #sobre{
+    margin: 0 auto;
+    width: 1610px;
+    height: 690px;
+    /*Ver o esboço do formulário */
+    margin-top: .2em;
+    /* border: 2.5px solid rgb(24, 61, 104); */
+    /* border-radius: .3em; */
+  }
+  
