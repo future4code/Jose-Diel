@@ -3,14 +3,14 @@
     padding: 0;
     
 }
-@media screen and (min-device-width: 0) and (max-device-width: 700px){
+@media screen and (min-device-width: 100px) and (max-device-width: 600px){
     header{
         background-color: rgb(3, 3, 3);
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0 16px;
-        width: 1000px;
+        /* width: 1000px; */
         height: 52px;
         margin: 0 auto;
     }
@@ -25,31 +25,35 @@
     }
     .busca{
         width: auto;
-        margin-left:  -850px;
+        /* margin-left:  -850px; */
     }
     main{
         margin-top: 0 2px;
-        height: 740px;
-        width: 360px;
+        height: auto;
+        width: auto;
     
     }
     #lista{
-        
+        /* display: grid; */
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+        align-items:flex-end;
         border: 1px solid rgb(8, 8, 8);
         margin: 5px 10px;
         padding: 21.1px .1px;
-        /* padding: 22px 10px; */
+        padding: 22px 10px;
         text-align: center;
+        margin-top: 20px;
         
         
         
     }
     #lista img{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        /* align-items: center; */
-        /* justify-content: center; */
-        /* max-width: 290px; */
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: stretch;
+        justify-content: center;
+        max-width: 290px;
         margin-top: -21px;
            max-width: 100%;
            
@@ -62,34 +66,46 @@
     
     footer{
         background-color: black;
-        color: #fff;
-        margin-top: 1020px;
+    color: #fff;
+    margin-top: 100%;
+    text-align: center;
+    padding: 35px 75px;
+    }
+    main div h1{
         text-align: center;
-        padding: 45px 85px;
+        margin-top: 10px;
     }
     main div video{
-        margin-left: 400px;
+         display: flex;
+         justify-content:center;
+         /* border: 3px solid rgb(8, 8, 8); */
+         padding: 2px;
+         width: 348px;
+         height: auto;
+         /* padding: 21.1px .1px;
+         padding: 22px 10px; */
+         /* text-align: center; */
     }
 
 }
 
-
+@media screen and (min-device-width: 601px) and (max-device-width: 3000px){
 header{
     background-color: rgb(3, 3, 3);
     display: flex;
     justify-content:space-between;
     align-items: center;
-    padding: 0 8px;
+    padding: 0 18px;
     /* width: 1000px; */
-    height: 62px;
+    height: 100px;
     margin: 0;
 }
 #logo{
     display: flex;
     align-items: center;
-    /* height: 32px;
-    width: 32px; */
-    padding: -550px 100px;    
+    height: auto;
+    width: auto;
+    /* padding: -550px 100px;     */
 
     /* margin-right: -100px; */
 }
@@ -106,18 +122,21 @@ header{
     width: auto;
     /* margin-left:  -850px; */
 }
+
 main{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
     /* max-width: 290px; */
     /* margin-top: -21px; */
     /* max-width: 100%; */
-    padding:  45px;
+    /* padding:  45px; */
 }
 main div video{
     margin-left: auto;
+    padding: 15px;
 }
 main div h1{
     text-align: center;}
@@ -128,7 +147,7 @@ main div h1{
     padding: 21.1px .1px;
     /* padding: 22px 10px; */
     text-align: center;
-    
+    margin-top: 20px;
     
     
 }
@@ -151,7 +170,8 @@ main div h1{
 footer{
     background-color: black;
     color: #fff;
-    margin-top: 114px;
+    margin-top: 100%;
     text-align: center;
-    padding: 45px 85px;
+    padding: 35px 85px;
+}
 }
