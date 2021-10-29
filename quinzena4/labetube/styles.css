@@ -1,62 +1,157 @@
 *{
     margin: 0;
     padding: 0;
+    
 }
+@media screen and (min-device-width: 0) and (max-device-width: 700px){
+    header{
+        background-color: rgb(3, 3, 3);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 16px;
+        width: 1000px;
+        height: 52px;
+        margin: 0 auto;
+    }
+    #logo{
+        height: 32px;
+        width: 32px;
+        margin-right: 8px;
+    }
+    #pesquiza{
+        
+        
+    }
+    .busca{
+        width: auto;
+        margin-left:  -850px;
+    }
+    main{
+        margin-top: 0 2px;
+        height: 740px;
+        width: 360px;
+    
+    }
+    #lista{
+        
+        border: 1px solid rgb(8, 8, 8);
+        margin: 5px 10px;
+        padding: 21.1px .1px;
+        /* padding: 22px 10px; */
+        text-align: center;
+        
+        
+        
+    }
+    #lista img{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        /* align-items: center; */
+        /* justify-content: center; */
+        /* max-width: 290px; */
+        margin-top: -21px;
+           max-width: 100%;
+           
+    }
+    #list p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer{
+        background-color: black;
+        color: #fff;
+        margin-top: 1020px;
+        text-align: center;
+        padding: 45px 85px;
+    }
+    main div video{
+        margin-left: 400px;
+    }
+
+}
+
 
 header{
     background-color: rgb(3, 3, 3);
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
-    padding: 0 16px;
-    height: 50px;
+    padding: 0 8px;
+    /* width: 1000px; */
+    height: 62px;
+    margin: 0;
 }
 #logo{
-    height: 32px;
-    width: 32px;
-    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    /* height: 32px;
+    width: 32px; */
+    padding: -550px 100px;    
+
+    /* margin-right: -100px; */
+}
+#logo .logo img{
+    display: flex;
+    align-items:flex-start;
+    justify-content: space-between;
 }
 #pesquiza{
-    color: #fff;
-  
-}
-.conteudo {
-     display: flex; 
-     width: 100vw; 
-}
-
-main{
     
+    
+}
+.busca{
+    width: auto;
+    /* margin-left:  -850px; */
+}
+main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 11px;
-    column-gap: 1px;
-    margin: 12px;
-    flex-grow: 1
+    align-items: center;
+    justify-content: center;
+    /* max-width: 290px; */
+    /* margin-top: -21px; */
+    /* max-width: 100%; */
+    padding:  45px;
+}
+main div video{
+    margin-left: auto;
+}
+main div h1{
+    text-align: center;}
+#lista{
+    
+    border: 1px solid rgb(8, 8, 8);
+    margin: 5px 10px;
+    padding: 21.1px .1px;
+    /* padding: 22px 10px; */
+    text-align: center;
+    
+    
     
 }
-.card-produto {
-    max-width: 100px;
-    display: flex;
-    flex-direction: column; 
+#lista img{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
-    text-align: center;
-    box-shadow: 1px 1px 2px darkgray
+    justify-content: center;
+    /* max-width: 290px; */
+    margin-top: -21px;
+       max-width: 100%;
+       
 }
-.videos-card{
-    width: 100%;
-}
-footer {
-    background-color: rgb(44, 43, 44);
-    height: 60px;
-    /* Centralização com Flex */
-     display: flex;
+#list p{
+    display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
+}
 
-    /* Centralização de Grid */
-    /* display: grid; */
-    /* justify-content: center;
-    align-content: center; */
+footer{
+    background-color: black;
+    color: #fff;
+    margin-top: 114px;
+    text-align: center;
+    padding: 45px 85px;
 }
